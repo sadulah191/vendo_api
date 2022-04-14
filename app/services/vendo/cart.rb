@@ -6,9 +6,10 @@ class Vendo::Cart
   end
 
   def create
-    response = client.post('api/v2/storefront/cart', {
+    response = client.post('/api/v2/storefront/cart', {
       headers: client.cart_headers
     })
+
     client.vendo_cart = response["data"]["attributes"]["token"]
     response
   end
@@ -18,7 +19,7 @@ class Vendo::Cart
       headers: client.cart_headers
     }
     options = options.merge({query: { include: "line_items" }}) if include_line_items
-    response = client.post('api/v2/storefront/cart', options)
+    response = client.get('/api/v2/storefront/cart', options)
     response
   end
 end
