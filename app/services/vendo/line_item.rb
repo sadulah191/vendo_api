@@ -15,11 +15,11 @@ class Vendo::LineItem
     response
   end
 
-  def remove_item(line_item_id:)
+  def remove_item(line_item_id: )
     options = {
       headers: client.cart_headers
     }
-    response = client.delete('/api/v2/storefront/cart/remove_line_item', options)
+    response = client.delete("/api/v2/storefront/cart/remove_line_item/#{line_item_id}", options)
 
     response
   end

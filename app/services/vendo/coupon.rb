@@ -6,7 +6,7 @@ class Vendo::Coupon
     @client = client
   end
 
-  def apply_coupon(coupon:)
+  def apply(coupon:)
     options = {
       headers: client.cart_headers
     }

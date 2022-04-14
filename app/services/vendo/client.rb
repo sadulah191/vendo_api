@@ -1,9 +1,12 @@
 class Vendo::Client < Vendo::Base
   attr_accessor :bearer_token, :refresh_token, :vendo_cart
   AUTH_URL = '/spree_oauth/token'
+  DEFUALT_USERNAME = "vendo@example.com"
+  DEFUALT_PASSWORD = "vendo123"
+
   include Vendo::Actions
 
-  def auth(username: "vendo@example.com", password: "vendo123")
+  def auth(username: DEFUALT_USERNAME, password: DEFUALT_PASSWORD)
     response = post(AUTH_URL, {
       body: {
         "grant_type": "password",

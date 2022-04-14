@@ -24,6 +24,6 @@ module Vendo::Actions
   end
 
   def apply_coupon_code(coupon)
-    Vendo::Coupon.new(self).apply_coupon(coupon: coupon)
+    Vendo::Coupon.new(self).apply(coupon: coupon)
   end
 end
