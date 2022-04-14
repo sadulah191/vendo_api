@@ -1,5 +1,7 @@
 class Vendo::Base
   include HTTParty
+  include Vendo::Errors
+
   base_uri 'https://demo.getvendo.com'
 
 
@@ -27,6 +29,14 @@ class Vendo::Base
   end
 
   def error_or_response(response)
+    status = response.code
+    respond_with_error(status, response) if status.between?(400, 599) || (response.respond_to?(:has_key?) && response.key?('error'))
+    response
+  end
 
+  def respond_with_error(code, body)
+    raise(Vendo::Errors::CODES[code].new) if Vendo::Errors::CODES.key? code
+
+    raise Vendo::Errors::VendoError.new(code, body.message)
   end
 end
