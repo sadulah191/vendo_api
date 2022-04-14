@@ -1,0 +1,8 @@
+{
+  "error": "Example is invalid",
+  "errors": {
+    "example": [
+      "Example is invalid"
+    ]
+  }
+}

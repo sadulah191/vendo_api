@@ -1,0 +1,100 @@
+{
+  "data": {
+    "id": "18",
+    "type": "cart",
+    "attributes": {
+      "number": "R177608027",
+      "item_total": "474.95",
+      "total": "527.45",
+      "ship_total": "5.0",
+      "adjustment_total": "47.5",
+      "created_at": "2021-09-28T22:31:47.401Z",
+      "updated_at": "2021-09-28T22:33:20.257Z",
+      "completed_at": "2021-09-28T22:33:18.372Z",
+      "included_tax_total": "0.0",
+      "additional_tax_total": "47.5",
+      "display_additional_tax_total": "$47.50",
+      "display_included_tax_total": "$0.00",
+      "tax_total": "47.5",
+      "currency": "USD",
+      "state": "complete",
+      "token": "5DUe7Jg40Lu-SoEvAKRKcQ1632868307387",
+      "email": "vendo@example.com",
+      "display_item_total": "$474.95",
+      "display_ship_total": "$5.00",
+      "display_adjustment_total": "$47.50",
+      "display_tax_total": "$47.50",
+      "promo_total": "0.0",
+      "display_promo_total": "$0.00",
+      "item_count": 5,
+      "special_instructions": null,
+      "display_total": "$527.45",
+      "pre_tax_item_amount": "474.95",
+      "display_pre_tax_item_amount": "$474.95",
+      "pre_tax_total": "479.95",
+      "display_pre_tax_total": "$479.95",
+      "shipment_state": "ready",
+      "payment_state": "paid"
+    },
+    "relationships": {
+      "line_items": {
+        "data": [
+          {
+            "id": "980a80d5-f51b-4065-b3a0-622fc5cb6bf6",
+            "type": "line_item"
+          }
+        ]
+      },
+      "variants": {
+        "data": [
+          {
+            "id": "131",
+            "type": "variant"
+          }
+        ]
+      },
+      "promotions": {
+        "data": [
+          {
+            "id": "2",
+            "type": "promotion"
+          }
+        ]
+      },
+      "payments": {
+        "data": [
+          {
+            "id": "980a80d5-f51b-4065-b3a0-622fc5cb6bf6",
+            "type": "payment"
+          }
+        ]
+      },
+      "shipments": {
+        "data": [
+          {
+            "id": "980a80d5-f51b-4065-b3a0-622fc5cb6bf6",
+            "type": "shipment"
+          }
+        ]
+      },
+      "user": {
+        "data": {
+          "id": "980a80d5-f51b-4065-b3a0-622fc5cb6bf6",
+          "type": "user"
+        }
+      },
+      "billing_address": {
+        "data": {
+          "id": "5",
+          "type": "address"
+        }
+      },
+      "shipping_address": {
+        "data": {
+          "id": "5",
+          "type": "address"
+        }
+      }
+    }
+  }
+}

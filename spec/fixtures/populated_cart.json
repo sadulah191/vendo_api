@@ -1,0 +1,95 @@
+{
+  "data": {
+    "id": "11",
+    "type": "cart",
+    "attributes": {
+      "number": "R823511564",
+      "item_total": "287.97",
+      "total": "316.0",
+      "ship_total": "5.0",
+      "adjustment_total": "23.03",
+      "created_at": "2021-09-28T12:57:15.148Z",
+      "updated_at": "2021-09-28T13:06:02.689Z",
+      "completed_at": null,
+      "included_tax_total": "26.18",
+      "additional_tax_total": "51.83",
+      "display_additional_tax_total": "$51.83",
+      "display_included_tax_total": "$26.18",
+      "tax_total": "78.01",
+      "currency": "USD",
+      "state": "payment",
+      "token": "VDK_6q_NNdWFc81VZRpUfQ1632833835148",
+      "email": "vendo@example.com",
+      "display_item_total": "$287.97",
+      "display_ship_total": "$5.00",
+      "display_adjustment_total": "$23.03",
+      "display_tax_total": "$78.01",
+      "promo_total": "-28.8",
+      "display_promo_total": "-$28.80",
+      "item_count": 3,
+      "special_instructions": null,
+      "display_total": "$316.00",
+      "pre_tax_item_amount": "261.7909",
+      "display_pre_tax_item_amount": "$261.79",
+      "pre_tax_total": "266.7909",
+      "display_pre_tax_total": "$266.79",
+      "shipment_state": null,
+      "payment_state": null
+    },
+    "relationships": {
+      "line_items": {
+        "data": [
+          {
+            "id": "6",
+            "type": "line_item"
+          }
+        ]
+      },
+      "variants": {
+        "data": [
+          {
+            "id": "130",
+            "type": "variant"
+          }
+        ]
+      },
+      "promotions": {
+        "data": [
+          {
+            "id": "2",
+            "type": "promotion"
+          }
+        ]
+      },
+      "payments": {
+        "data": []
+      },
+      "shipments": {
+        "data": [
+          {
+            "id": "7",
+            "type": "shipment"
+          }
+        ]
+      },
+      "user": {
+        "data": {
+          "id": "980a80d5-f51b-4065-b3a0-622fc5cb6bf6",
+          "type": "user"
+        }
+      },
+      "billing_address": {
+        "data": {
+          "id": "25",
+          "type": "address"
+        }
+      },
+      "shipping_address": {
+        "data": {
+          "id": "25",
+          "type": "address"
+        }
+      }
+    }
+  }
+}
